@@ -333,7 +333,7 @@
             .then(response => response.json())
             .then(data => {
                 // Imposta i valori presi dal JSON
-                const { link_vip, title, description, image_url, anteprime, onlyfans_link } = data;
+                const { link_vip, title, description, image_url, anteprime } = data;
 
                 if (image_url) {
                     document.querySelector('#profile img').setAttribute('src', image_url);
@@ -349,9 +349,6 @@
                 }
                 if (link_vip) {
                     document.getElementById('vip-link').setAttribute('href', link_vip);
-                }
-                if (onlyfans_link) {
-                    document.getElementById('onlyfans-link').setAttribute('href', onlyfans_link);
                 }
             })
             .catch(error => console.error('Error loading JSON data:', error));
