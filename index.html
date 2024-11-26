@@ -412,23 +412,6 @@
             })
             .catch(error => console.error('Error loading JSON data:', error));
 
-        // Heart and Star Animation Script
-        const createOfLogo = () => {
-            const ofLogo = document.createElement('div');
-            ofLogo.classList.add('ofLogo');
-            const button = document.querySelector('.of-button');
-            const buttonRect = button.getBoundingClientRect();
-            ofLogo.style.left = buttonRect.left + buttonRect.width / 2 + 'px';
-            ofLogo.style.top = buttonRect.top + buttonRect.height + 'px';
-            ofLogo.style.setProperty('--random-dir-x', Math.random());
-            ofLogo.style.setProperty('--random-dir-y', Math.random());
-            
-            document.body.appendChild(ofLogo);
-            setTimeout(() => {
-                ofLogo.remove();
-            }, 25000);  // Tempo di visualizzazione prima della rimozione
-        };
-
         
         
         const createStar = () => {
