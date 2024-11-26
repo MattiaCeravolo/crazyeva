@@ -155,48 +155,6 @@
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
         }
-        .of-button {
-            position: relative;
-            display: inline-block;
-            padding: 15px 30px;
-            background: #00AFF0; /* Colore principale di OnlyFans */
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 50px;
-            transition: all 0.4s ease;
-            text-align: center;
-            font-weight: bold;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            animation: pulse 2s infinite;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .of-button::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: -100%;
-            width: 150%;
-            height: 200%;
-            background: rgba(255, 255, 255, 0.5); /* Effetto scorrimento bianco */
-            transform: skewX(-45deg) translateY(-50%);
-            transition: left 1.5s;
-            z-index: -1;
-        }
-        
-        .of-button:hover::before {
-            left: 100%;
-        }
-        
-        .of-button:hover {
-            background: #008DD2; /* Colore hover blu più scuro */
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        }
         .chat-button {
             position: relative;
             display: inline-block;
@@ -251,14 +209,6 @@
             background-size: cover; /* Assicura che l'immagine si adatti bene */
             margin-left: 10px;
         }
-        .of-3d {
-            width: 30px;
-            height: 30px;
-            background-image: url("https://img.icons8.com/?size=100&id=HGaO91S8liC7&format=png&color=000000"); /* Sostituisci 'URL_DELLA_TUA_IMMAGINE' con il tuo URL */
-            background-size: cover; /* Assicura che l'immagine si adatti bene */
-            animation: bouncee 3 infinite ease-in-out;
-            margin-left: 10px;
-        }
 
 
         @keyframes bounce {
@@ -307,7 +257,7 @@
             word-break: break-all;
         }
         
-        .heart, .star, .ofLogo {
+        .heart, .star {
             position: absolute;
             width: 5px;
             height: 5px;
@@ -341,12 +291,6 @@
             background-size: cover; /* Assicura che l'immagine si adatti bene */
             width: 8px;
             height: 8px;
-        }
-        .ofLogo {
-            background-image: url("https://img.icons8.com/?size=100&id=HGaO91S8liC7&format=png&color=000000"); /* Sostituisci 'URL_DELLA_TUA_IMMAGINE' con il tuo URL */
-            background-size: cover; /* Assicura che l'immagine si adatti bene */
-            width: 12px;
-            height: 12px;
         }
 
         
@@ -430,7 +374,6 @@
         };
 
         setInterval(createStar, 500);
-        setInterval(createOfLogo, 500);
     </script>
 </body>
 </html>
